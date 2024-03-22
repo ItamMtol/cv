@@ -1,0 +1,18 @@
+Podział witryny na dwie strony: wygenerowana i formularz tworzenia
+	formularz pobiera:
+		imię, nazwisko
+		wykształcenie
+		zdjęcie
+		wybór umiejętności
+		wybór wykształcenia
+		zainteresowania
+		doświadczenie
+		wybór designu
+		linki do innych mediów (github, linkedin)
+	wygenerwana strona wyświetla w wybranym designie wszystkie informacje
+	opcja edytowania już wygenerowanej CV na zasadzie logowania
+to do:
+	wybranie designu formularza
+	utworzenie kilku designów CV
+	utworzenie formularza
+	zaimplementowanie generowania CV
