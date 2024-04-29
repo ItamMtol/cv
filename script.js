@@ -4,7 +4,7 @@ document.getElementById('cvForm').addEventListener('submit', function(event) {
 });
 function createFile(content){
   
-    var file = new File(["\\"+content], 'CV.html', {type: "text/plain:charset=UTF-8"});
+    var file = new File([""+content], 'CV.html', {type: "text/plain:charset=UTF-8"});
     url = window.URL.createObjectURL(file);
     var a = document.createElement("a");
     a.style = "display: none";
@@ -64,7 +64,7 @@ function displayCV() {
     var content = content + '<html>'
     var content = content + '<head>'
     
-    var content = content + '   <title>Jonathan Doe | Web Designer, Director | name@yourdomain.com</title>'
+    var content = content + '   <title>CV</title>'
     var content = content + '   <meta http-equiv="content-type" content="text/html; charset=utf-8" />'
     
     var content = content + '   <meta name="keywords" content="" />'
