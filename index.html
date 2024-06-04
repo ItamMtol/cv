@@ -1,45 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV Form</title>
+    <title>Generator CV</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 </head>
 <body>
-    <h1>CV Form</h1>
-    <form id="cvForm">
-        <label for="fullName">Full Name:</label>
-        <input type="text" id="fullName" name="fullName" required><br><br>
+    <div class="container">
+        <h1>Generator CV</h1>
+        <form id="cvForm">
+            <label for="name">Imię i Nazwisko:</label>
+            <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone" name="phone" required placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="000-000-000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"><br><br>
 
-        <label for="address">Address:</label>
-        <input type="text" id="address" name="address"><br><br>
+            <label for="address">Adres:</label>
+            <input type="text" id="address" name="address" required>
 
-        <label for="summary">Summary:</label><br>
-        <textarea id="summary" name="summary"></textarea><br><br>
+            <label for="photo">Zdjęcie:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
 
-        <label for="experience">Experience:</label><br>
-        <textarea id="experience" name="experience"></textarea><br><br>
+            <label for="education">Edukacja:</label>
+            <textarea id="education" name="education" required></textarea>
 
-        <label for="education">Education:</label><br>
-        <textarea id="education" name="education"></textarea><br><br>
+            <label for="experience">Doświadczenie zawodowe:</label>
+            <textarea id="experience" name="experience" required></textarea>
 
-        <button type="submit">Submit</button>
-    </form>
+            <label for="skills">Umiejętności:</label>
+            <textarea id="skills" name="skills" required></textarea>
 
-    <div id="cvDisplay">
-        <h2>Your data</h2>
-        <div id="cvContent"></div>
-        <button onclick="editCV()">Edit CV</button>
+            <button type="button" onclick="saveDataAndRedirect()">Generuj CV</button>
+        </form>
     </div>
-    
-
     <script src="script.js"></script>
 </body>
 </html>
